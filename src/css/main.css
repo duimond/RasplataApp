@@ -3,8 +3,9 @@ header{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
-border: #000 solid;
+    border-bottom: 1px solid #adadad;
     text-align: center;
+
 }
 body{
     background-color: rgb(185, 185, 185);
@@ -12,17 +13,19 @@ body{
     padding: 0;
 }
 aside form {
+    
     display: flex;
-    flex-direction: column; /* Элементы в столбец */
-    gap: 10px; /* Отступ между элементами */
-    width: 300px; /* Фиксированная ширина или 100% */
-    margin: 20px auto; /* Центрирование */
+    flex-direction: column; 
+    gap: 10px; 
+    width: 300px; 
+    margin: 20px auto; 
     
 }
 aside form input{
     background-color: #c0c0c0;
     height: 30px;
     border-radius: 7px;
+    border: 1px solid #adadad;
 }
 aside form button{
     background-color: #a9c7b7;
@@ -35,15 +38,30 @@ aside form button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid #000;
-    margin: 4% auto 0;
+    border: 2px solid #adadad;
+    margin: 10% auto 0;
     border-radius: 50px;
     width: 20%;
     background-color: #929292;
+    opacity: 1;
 }
 .logo{
   width: 70%;
   height: 70%;
   object-fit: cover; /* или contain */
+}
+body::before {
+    content: "";
+    background-image: url('../icons/back.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Полупрозрачность (0.5 = 50%) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: 6% auto 0;
 }
 
