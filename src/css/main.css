@@ -1,0 +1,12 @@
+body {
+    background-color: #636363;
+    color: #fff;
+}
+
+.header {
+    background-color: #696969;
+    color:#000000;
+    font-size: x-large;
+    text-align: center;
+    height: 20%;
+}
